@@ -4,9 +4,6 @@ from django.http import HttpResponse
 from .models import Task
 # Create your views here.
 
-tasks = ['check email', 'run', 'homework', 'go to party']
-
-
 def index(request):
     return HttpResponse("Hola mundo")
 

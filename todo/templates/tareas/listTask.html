@@ -13,7 +13,6 @@
                 <td>Task</td>
                 <td>Priority</td>
         </tr>
-        <tr>
             {% for task in tasks %}
             <tr>
                 <td>{{ task.id }}</td>
@@ -21,7 +20,6 @@
                 <td>{{ task.priority }}</td>
             </tr>
             {% endfor %}
-        </tr>
     </table>
 </body>
 </html>
