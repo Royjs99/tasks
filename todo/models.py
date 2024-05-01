@@ -9,4 +9,3 @@ class Task(models.Model):
     
     def __str__(self):
         return f"{self.id}: {self.tarea} the priority is {self.priority}"
-    
