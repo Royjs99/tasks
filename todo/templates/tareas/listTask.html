@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TODO LIST</title>
+</head>
+<body>
+    <h1>TODO list</h1>
+    <table border="1">
+        <tr>
+                <td>ID</td>
+                <td>Task</td>
+                <td>Priority</td>
+        </tr>
+        <tr>
+            {% for task in tasks %}
+            <tr>
+                <td>{{ task.id }}</td>
+                <td>{{ task.tarea }}</td>
+                <td>{{ task.priority }}</td>
+            </tr>
+            {% endfor %}
+        </tr>
+    </table>
+</body>
+</html>
